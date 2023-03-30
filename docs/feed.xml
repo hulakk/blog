@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hulakk.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hulakk.github.io/blog/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2023-03-30T20:47:39+08:00</updated><id>https://hulakk.github.io/blog/feed.xml</id><title type="html">Hulakk’s Personal Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>hulakk</name></author><entry><title type="html">Hello, world!</title><link href="https://hulakk.github.io/blog/helloworld/2023/03/30/hello-world.html" rel="alternate" type="text/html" title="Hello, world!" /><published>2023-03-30T11:42:59+08:00</published><updated>2023-03-30T11:42:59+08:00</updated><id>https://hulakk.github.io/blog/helloworld/2023/03/30/hello-world</id><content type="html" xml:base="https://hulakk.github.io/blog/helloworld/2023/03/30/hello-world.html"><![CDATA[<h2 id="这是什么">这是什么？</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hulakk.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hulakk.github.io/blog/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2023-03-30T20:51:29+08:00</updated><id>https://hulakk.github.io/blog/feed.xml</id><title type="html">Hulakk’s Personal Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>hulakk</name></author><entry><title type="html">Hello, world!</title><link href="https://hulakk.github.io/blog/helloworld/2023/03/30/hello-world.html" rel="alternate" type="text/html" title="Hello, world!" /><published>2023-03-30T11:42:59+08:00</published><updated>2023-03-30T11:42:59+08:00</updated><id>https://hulakk.github.io/blog/helloworld/2023/03/30/hello-world</id><content type="html" xml:base="https://hulakk.github.io/blog/helloworld/2023/03/30/hello-world.html"><![CDATA[<h2 id="这是什么">这是什么？</h2>
 
 <p>这是我的个人博客网站，我希望它能够见证我的成长，以及帮我巩固学过的知识</p>
 
@@ -30,8 +30,8 @@ git commit -m "$d"
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2">"</span>
 </code></pre></div></div>]]></content><author><name>hulakk</name></author><category term="HelloWorld" /><summary type="html"><![CDATA[这是什么？]]></summary></entry><entry><title type="html">尊他语</title><link href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E5%B0%8A%E4%BB%96%E8%AF%AD.html" rel="alternate" type="text/html" title="尊他语" /><published>2023-03-29T19:48:21+08:00</published><updated>2023-03-29T19:48:21+08:00</updated><id>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E5%B0%8A%E4%BB%96%E8%AF%AD</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E5%B0%8A%E4%BB%96%E8%AF%AD.html"><![CDATA[<h3 id="敬语分类">敬语分类</h3>
 
-<p>尊他语：抬高会话内容中的人物
-自谦语：压低说话人自身或说话人一方
+<p>尊他语：抬高会话内容中的人物<br />
+自谦语：压低说话人自身或说话人一方<br />
 礼貌语：对听话人的敬意</p>
 
 <h3 id="尊他语">尊他语</h3>
@@ -47,16 +47,16 @@ git commit -m "$d"
 
 <h5 id="3约定俗成">（3）约定俗成</h5>
 
-<p>見る　ーー　ご覧になる
-食べる　ーー　召し上がる
-飲む　ーー　召し上がる
-行く　ーー　いらっしゃる
-来る　ーー　いらっしゃる
-いる　ーー　しらっしゃる
-する　ーー　なさる
-言う　ーー　おっしゃる
-くれる　ーー　くださる
-～ている　ーー　～ていあらしゃる
+<p>見る　ーー　ご覧になる<br />
+食べる　ーー　召し上がる<br />
+飲む　ーー　召し上がる<br />
+行く　ーー　いらっしゃる<br />
+来る　ーー　いらっしゃる<br />
+いる　ーー　しらっしゃる<br />
+する　ーー　なさる<br />
+言う　ーー　おっしゃる<br />
+くれる　ーー　くださる<br />
+～ている　ーー　～ていあらしゃる<br />
 ～てくれる　ーー　～てくださる</p>
 
 <h3 id="ください">ください</h3>
@@ -107,19 +107,18 @@ git commit -m "$d"
 
 <h4 id="名词自谦语">名词自谦语</h4>
 
-<p>这些对应都是固定的，以下仅为举例：</p>
-
-<p>わたし　ーー　わたくし
-会社　ーー　社
-わたしたち　ーー　わたくしども
+<p>这些对应都是固定的，以下仅为举例：<br />
+わたし　ーー　わたくし<br />
+会社　ーー　社<br />
+わたしたち　ーー　わたくしども<br />
 人（ひと）　ーー　者（もの）</p>
 
 <h3 id="ございます">ございます</h3>
 
-<p>”あります“ 的礼貌用法　ーー　ございます
+<p>”あります“ 的礼貌用法　ーー　ございます<br />
 “です”的礼貌用法　ーー　でございます</p>
 
 <h3 id="おります">おります</h3>
 
-<p>”います“ 的礼貌用法　ーー　おります
+<p>”います“ 的礼貌用法　ーー　おります<br />
 “ています”的礼貌用法　ーー　ております</p>]]></content><author><name>hulakk</name></author><category term="日本語" /><summary type="html"><![CDATA[动词的自谦语形式]]></summary></entry></feed>
