@@ -1,7 +1,9 @@
 ---
 layout: post
-title: 关于
-permalink: /about/
+title:  "Hello, world!"
+date:   2023-03-30 11:42:59 +0800
+categories: HelloWorld
+comments: true
 ---
 
 ## 这是什么？
