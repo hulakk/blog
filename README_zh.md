@@ -11,7 +11,28 @@ permalink: /about/
 ## 编译说明
 ### 本地调试
 #### Windows
-```
+```bat
 bundle exec jekyll serve -P 50000
 ```  
 结果显示在[`http://localhost::50000/blog/`](http://localhost::50000/blog/)
+
+## git快捷提交（使用日期作为日志）
+
+### Windows
+CMD：
+使用环境变量`%date%`和`%time%`
+```bat
+git commit -m "%date% %time%"
+```  
+Powershell:
+使用`date`命令的输出
+```ps1
+$d=date
+git commit -m "$d"
+```  
+
+### Linux
+使用`date`命令的输出
+```sh
+git commit -m "$(date)"
+```
