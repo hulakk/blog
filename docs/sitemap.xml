@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E5%B0%8A%E4%BB%96%E8%AF%AD.html</loc>
+<lastmod>2023-03-29T19:48:21+08:00</lastmod>
+</url>
+<url>
+<loc>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E8%87%AA%E8%B0%A6%E8%AF%AD.html</loc>
+<lastmod>2023-03-29T19:48:21+08:00</lastmod>
+</url>
+<url>
 <loc>https://hulakk.github.io/blog/helloworld/2023/03/30/hello-world.html</loc>
 <lastmod>2023-03-30T11:42:59+08:00</lastmod>
 </url>
 <url>
-<loc>https://hulakk.github.io/blog/about/</loc>
+<loc>https://hulakk.github.io/blog/about.html</loc>
+</url>
+<url>
+<loc>https://hulakk.github.io/blog/archives.html</loc>
+</url>
+<url>
+<loc>https://hulakk.github.io/blog/categories.html</loc>
 </url>
 <url>
 <loc>https://hulakk.github.io/blog/</loc>
+</url>
+<url>
+<loc>https://hulakk.github.io/blog/tags.html</loc>
 </url>
 </urlset>
