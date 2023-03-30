@@ -1,1 +1,3 @@
-del docs /s && jekyll build && rename _site docs
+rmdir /s/q "docs"
+jekyll build
+rename _site docs
