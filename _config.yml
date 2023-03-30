@@ -30,7 +30,7 @@ url: "https://hulakk.github.io" # the base hostname & protocol for your site, e.
 github_username:  hulakk
 
 # Build settings
-theme: minima
+theme: jekyll-theme-simplex
 plugins:
   - jekyll-feed
 
