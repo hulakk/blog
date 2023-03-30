@@ -1,8 +1,4 @@
----
-layout: post
-title: 关于
-permalink: /about/
----
+# README
 
 ## 这是什么？
 
