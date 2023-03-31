@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Hello, world!"
-date:   2023-03-30 11:42:59 +0800
-categories: HelloWorld
+title:  博客管理
+categories: 博客管理
 comments: true
 ---
 
