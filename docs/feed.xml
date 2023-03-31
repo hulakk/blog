@@ -1,31 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hulakk.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hulakk.github.io/blog/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2023-03-31T13:30:31+08:00</updated><id>https://hulakk.github.io/blog/feed.xml</id><title type="html">Hulakk’s Personal Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>hulakk</name></author><entry><title type="html">【动】てくる &amp;amp; 【动】ていく</title><link href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E3%81%A6%E3%81%84%E3%81%8F&%E3%81%A6%E3%81%84%E3%82%8B.html" rel="alternate" type="text/html" title="【动】てくる &amp;amp; 【动】ていく" /><published>2023-03-31T00:00:00+08:00</published><updated>2023-03-31T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E3%81%A6%E3%81%84%E3%81%8F&amp;%E3%81%A6%E3%81%84%E3%82%8B</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E3%81%A6%E3%81%84%E3%81%8F&amp;%E3%81%A6%E3%81%84%E3%82%8B.html"><![CDATA[<h2 id="表示一直持续的变化">表示一直持续的变化</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hulakk.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hulakk.github.io/blog/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2023-03-31T13:38:04+08:00</updated><id>https://hulakk.github.io/blog/feed.xml</id><title type="html">Hulakk’s Personal Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>hulakk</name></author><entry><title type="html">【动】てくる &amp;amp; 【动】ていく</title><link href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E3%81%A6%E3%81%84%E3%81%8F&%E3%81%A6%E3%81%84%E3%82%8B.html" rel="alternate" type="text/html" title="【动】てくる &amp;amp; 【动】ていく" /><published>2023-03-31T00:00:00+08:00</published><updated>2023-03-31T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E3%81%A6%E3%81%84%E3%81%8F&amp;%E3%81%A6%E3%81%84%E3%82%8B</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E3%81%A6%E3%81%84%E3%81%8F&amp;%E3%81%A6%E3%81%84%E3%82%8B.html"><![CDATA[<h2 id="表示一直持续的变化">表示一直持续的变化</h2>
 <p>【动】てくる/【动】ていく<br />
 过去到现在持续的变化用てくる，现在到将来持续的变化用ていく</p>
 
-<p>例子：<br />
-少子化が進んで、日本の人口はだんだん減っていくでしょう。<br />
+<p>例子：</p>
+<ul>
+  <li>
+    <p>少子化が進んで、日本の人口はだんだん減っていくでしょう。<br />
 孩子减少现象日益加剧，日本的人口将会越来越少吧。</p>
-
-<p>最近、中国へ旅行に行く日本人が増えてきましたね。<br />
+  </li>
+  <li>
+    <p>最近、中国へ旅行に行く日本人が増えてきましたね。<br />
 最近，到中国旅行的日本人躲起来了。</p>
-
-<p>20年間ずっと日本語を勉強してきました。<br />
+  </li>
+  <li>
+    <p>20年間ずっと日本語を勉強してきました。<br />
 这20年我一直在学日语。</p>
-
-<p>これからもずっと日本語を勉強しでいきます。<br />
+  </li>
+  <li>
+    <p>これからもずっと日本語を勉強しでいきます。<br />
 今后我也要一直坚持学日语。</p>
+  </li>
+</ul>
 
 <h2 id="状态出现">状态出现</h2>
 <p>“【动】てくる”还有表示某种状态的开始或出现的用法，前面的动词只能是非意志动词。</p>
 
-<p>ずっと本を読んでいたので、目が疲れてきました。<br />
+<ul>
+  <li>
+    <p>ずっと本を読んでいたので、目が疲れてきました。<br />
 一直在看书，眼睛累了。</p>
-
-<p>お母さん、雨が降ってきます。<br />
+  </li>
+  <li>
+    <p>お母さん、雨が降ってきます。<br />
 妈妈，开始下雨了。</p>
-
-<p>お腹が空いてきたんですが、そろそろ食事に行きませんか。<br />
-肚子有点饿了，咱们去吃饭好吗？</p>]]></content><author><name>hulakk</name></author><category term="日本語" /><summary type="html"><![CDATA[表示一直持续的变化 【动】てくる/【动】ていく 过去到现在持续的变化用てくる，现在到将来持续的变化用ていく]]></summary></entry><entry><title type="html">博客管理</title><link href="https://hulakk.github.io/blog/%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/2023/03/30/hello-world.html" rel="alternate" type="text/html" title="博客管理" /><published>2023-03-30T00:00:00+08:00</published><updated>2023-03-30T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/2023/03/30/hello-world</id><content type="html" xml:base="https://hulakk.github.io/blog/%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/2023/03/30/hello-world.html"><![CDATA[<h2 id="这是什么">这是什么？</h2>
+  </li>
+  <li>
+    <p>お腹が空いてきたんですが、そろそろ食事に行きませんか。<br />
+肚子有点饿了，咱们去吃饭好吗？</p>
+  </li>
+</ul>]]></content><author><name>hulakk</name></author><category term="日本語" /><summary type="html"><![CDATA[表示一直持续的变化 【动】てくる/【动】ていく 过去到现在持续的变化用てくる，现在到将来持续的变化用ていく]]></summary></entry><entry><title type="html">博客管理</title><link href="https://hulakk.github.io/blog/%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/2023/03/30/hello-world.html" rel="alternate" type="text/html" title="博客管理" /><published>2023-03-30T00:00:00+08:00</published><updated>2023-03-30T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/2023/03/30/hello-world</id><content type="html" xml:base="https://hulakk.github.io/blog/%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/2023/03/30/hello-world.html"><![CDATA[<h2 id="这是什么">这是什么？</h2>
 
 <p>这是我的个人博客网站，我希望它能够见证我的成长，以及帮我巩固学过的知识</p>
 
@@ -61,15 +74,19 @@ git commit -m "$d"
 礼貌语：对听话人的敬意</p>
 
 <h3 id="尊他语">尊他语</h3>
-<h5 id="1第一种变形动词的被动态可以直接作为尊他语">（1）第一种变形：动词的被动态可以直接作为尊他语</h5>
-<p>“被动态”即“受身形”</p>
-
-<h5 id="2第二种变形只适用于一类二类动词">（2）第二种变形（只适用于一类、二类动词）：</h5>
-<p>一类动词/二类动词： お【动（~ます~形）】になる<br />
+<ul>
+  <li>
+    <p>（1）第一种变形：动词的被动态可以直接作为尊他语
+“被动态”即“受身形”</p>
+  </li>
+  <li>
+    <p>（2）第二种变形（只适用于一类、二类动词）：
+一类动词/二类动词： お【动（~ます~形）】になる<br />
 三类动词没有这种变形法</p>
-
-<h5 id="3约定俗成">（3）约定俗成</h5>
-<p>見る　ーー　ご覧になる<br />
+  </li>
+  <li>
+    <p>（3）约定俗成<br />
+見る　ーー　ご覧になる<br />
 食べる　ーー　召し上がる<br />
 飲む　ーー　召し上がる<br />
 行く　ーー　いらっしゃる<br />
@@ -80,11 +97,15 @@ git commit -m "$d"
 くれる　ーー　くださる<br />
 ～ている　ーー　～ていあらしゃる<br />
 ～てくれる　ーー　～てくださる</p>
+  </li>
+</ul>
 
 <h3 id="ください">ください</h3>
-<h5 id="お一类动二类动ます形ください">お【一类动/二类动（~ます~形）】ください</h5>
-<h5 id="ご三类动ます形ください">ご【三类动（~ます~形）】ください</h5>
-<p>劝说听话人做某事，“请做某事”</p>]]></content><author><name>hulakk</name></author><category term="日本語" /><summary type="html"><![CDATA[敬语分类 尊他语：抬高会话内容中的人物 自谦语：压低说话人自身或说话人一方 礼貌语：对听话人的敬意]]></summary></entry><entry><title type="html">自谦语</title><link href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E8%87%AA%E8%B0%A6%E8%AF%AD.html" rel="alternate" type="text/html" title="自谦语" /><published>2023-03-29T00:00:00+08:00</published><updated>2023-03-29T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E8%87%AA%E8%B0%A6%E8%AF%AD</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E8%87%AA%E8%B0%A6%E8%AF%AD.html"><![CDATA[<h3 id="动词的自谦语形式">动词的自谦语形式</h3>
+<ul>
+  <li>お【一类动/二类动（~ます~形）】ください</li>
+  <li>ご【三类动（~ます~形）】ください
+劝说听话人做某事，“请做某事”</li>
+</ul>]]></content><author><name>hulakk</name></author><category term="日本語" /><summary type="html"><![CDATA[敬语分类 尊他语：抬高会话内容中的人物 自谦语：压低说话人自身或说话人一方 礼貌语：对听话人的敬意]]></summary></entry><entry><title type="html">自谦语</title><link href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E8%87%AA%E8%B0%A6%E8%AF%AD.html" rel="alternate" type="text/html" title="自谦语" /><published>2023-03-29T00:00:00+08:00</published><updated>2023-03-29T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E8%87%AA%E8%B0%A6%E8%AF%AD</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E8%87%AA%E8%B0%A6%E8%AF%AD.html"><![CDATA[<h3 id="动词的自谦语形式">动词的自谦语形式</h3>
 <p>一类动词/二类动词： お【动（~ます~形）】する<br />
 三类动词：　　　　　ご【动（~ます~形）】する</p>
 
@@ -112,18 +133,24 @@ git commit -m "$d"
 
 <h3 id="动词以外的敬语形式">动词以外的敬语形式</h3>
 
-<h4 id="名词美化语">名词美化语</h4>
-<p>日语固有词前加“お”，汉字词前加“ご”</p>
-
-<h4 id="形容词尊他语">形容词尊他语</h4>
-<p>日语固有词前加“お”，汉字词前加“ご”</p>
-
-<h4 id="名词自谦语">名词自谦语</h4>
-<p>这些对应都是固定的，以下仅为举例：<br />
+<ul>
+  <li>
+    <p>名词美化语
+日语固有词前加“お”，汉字词前加“ご”</p>
+  </li>
+  <li>
+    <p>形容词尊他语
+日语固有词前加“お”，汉字词前加“ご”</p>
+  </li>
+  <li>
+    <p>名词自谦语
+这些对应都是固定的，以下仅为举例：<br />
 わたし　ーー　わたくし<br />
 会社　ーー　社<br />
 わたしたち　ーー　わたくしども<br />
 人（ひと）　ーー　者（もの）</p>
+  </li>
+</ul>
 
 <h3 id="ございます">ございます</h3>
 <p>”あります“ 的礼貌用法　ーー　ございます<br />
