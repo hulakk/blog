@@ -1,26 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hulakk.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hulakk.github.io/blog/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2023-03-31T17:24:52+08:00</updated><id>https://hulakk.github.io/blog/feed.xml</id><title type="html">Hulakk’s Personal Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>hulakk</name></author><entry><title type="html">助词に的用法</title><link href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB.html" rel="alternate" type="text/html" title="助词に的用法" /><published>2023-03-31T00:00:00+08:00</published><updated>2023-03-31T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB.html"><![CDATA[<h2 id="表示存在地点">表示存在地点</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hulakk.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hulakk.github.io/blog/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2023-03-31T17:32:32+08:00</updated><id>https://hulakk.github.io/blog/feed.xml</id><title type="html">Hulakk’s Personal Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>hulakk</name></author><entry><title type="html">助词に的用法</title><link href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB.html" rel="alternate" type="text/html" title="助词に的用法" /><published>2023-03-31T00:00:00+08:00</published><updated>2023-03-31T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB.html"><![CDATA[<h2 id="用于存在句的地点前">用于存在句的地点前</h2>
 <h2 id="表示时间点">表示时间点</h2>
 <h2 id="表示动作归着点">表示动作归着点</h2>
 <h2 id="表示动作的对方">表示动作的对方</h2>
 <p>与<code class="language-plaintext highlighter-rouge">を</code>的区别是：给了某人某物，某人后用<code class="language-plaintext highlighter-rouge">に</code>，某物后用<code class="language-plaintext highlighter-rouge">を</code></p>
 <h2 id="表示移动的目的">表示移动的目的</h2>
-<p>接在动词连用形（ます形）或动作性名词之后，表示移动行为目的。</p>
+<p>接在动词连用形（<del>ます</del>形）或动作性名词之后，表示移动行为目的。</p>
 <ul>
   <li>週末になると、よく日本へ買い物に行きます。<br />
 每逢周末，我都会去日本购物。（“去日本”是为了“购物”）</li>
   <li>いつも図書館へ本を読みに行きます。<br />
-我经常去图书馆看书。（“去图书馆”是为了“看书”）
-    <h2 id="表示目的地">表示目的地</h2>
-    <p>与表示方向、去向的格助词「へ」相比，格助词「に」侧重于强调目的地、到达地点。</p>
-    <h2 id="表示频率的基数分母">表示频率的基数（分母）</h2>
-    <p>接在表时间段的数字后，某一时间范围内的数量或次数。</p>
-  </li>
+我经常去图书馆看书。（“去图书馆”是为了“看书”）</li>
+</ul>
+
+<h2 id="表示目的地">表示目的地</h2>
+<p>与表示方向、去向的格助词「へ」相比，格助词「に」侧重于强调目的地、到达地点。</p>
+<h2 id="表示频率的基数分母">表示频率的基数（分母）</h2>
+<p>接在表时间段的数字后，某一时间范围内的数量或次数。</p>
+<ul>
   <li><code class="language-plaintext highlighter-rouge">一週間に３回</code></li>
-  <li><code class="language-plaintext highlighter-rouge">２年に１度</code>
-    <h2 id="表示变化的结果">表示变化的结果</h2>
-    <h2 id="表示比较评价的基准">表示比较、评价的基准</h2>
-    <h2 id="表示被动句中的动作主体">表示被动句中的动作主体</h2>
-  </li>
+  <li><code class="language-plaintext highlighter-rouge">２年に１度</code></li>
+</ul>
+
+<h2 id="表示变化的结果">表示变化的结果</h2>
+<h2 id="表示比较评价的基准">表示比较、评价的基准</h2>
+<h2 id="表示被动句中的动作主体">表示被动句中的动作主体</h2>
+<ul>
   <li>雨に降られて風邪を引いた。<br />
 淋雨而感冒了。</li>
   <li>友達に笑われました。<br />
@@ -28,7 +32,7 @@
 </ul>
 
 <h2 id="参考资料">参考资料</h2>
-<p><a href="https://zhuanlan.zhihu.com/p/86052810">日语助词「に」的14种用法总结</a></p>]]></content><author><name>hulakk</name></author><category term="日本語" /><summary type="html"><![CDATA[表示存在地点 表示时间点 表示动作归着点 表示动作的对方 与を的区别是：给了某人某物，某人后用に，某物后用を 表示移动的目的 接在动词连用形（ます形）或动作性名词之后，表示移动行为目的。 週末になると、よく日本へ買い物に行きます。 每逢周末，我都会去日本购物。（“去日本”是为了“购物”） いつも図書館へ本を読みに行きます。 我经常去图书馆看书。（“去图书馆”是为了“看书”） 表示目的地 与表示方向、去向的格助词「へ」相比，格助词「に」侧重于强调目的地、到达地点。 表示频率的基数（分母） 接在表时间段的数字后，某一时间范围内的数量或次数。 一週間に３回 ２年に１度 表示变化的结果 表示比较、评价的基准 表示被动句中的动作主体 雨に降られて風邪を引いた。 淋雨而感冒了。 友達に笑われました。 我被朋友嘲笑了。]]></summary></entry><entry><title type="html">助词と的用法</title><link href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8.html" rel="alternate" type="text/html" title="助词と的用法" /><published>2023-03-31T00:00:00+08:00</published><updated>2023-03-31T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8.html"><![CDATA[<h2 id="表示并列">表示并列</h2>
+<p><a href="https://zhuanlan.zhihu.com/p/86052810">日语助词「に」的14种用法总结</a></p>]]></content><author><name>hulakk</name></author><category term="日本語" /><summary type="html"><![CDATA[用于存在句的地点前 表示时间点 表示动作归着点 表示动作的对方 与を的区别是：给了某人某物，某人后用に，某物后用を 表示移动的目的 接在动词连用形（ます形）或动作性名词之后，表示移动行为目的。 週末になると、よく日本へ買い物に行きます。 每逢周末，我都会去日本购物。（“去日本”是为了“购物”） いつも図書館へ本を読みに行きます。 我经常去图书馆看书。（“去图书馆”是为了“看书”）]]></summary></entry><entry><title type="html">助词と的用法</title><link href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8.html" rel="alternate" type="text/html" title="助词と的用法" /><published>2023-03-31T00:00:00+08:00</published><updated>2023-03-31T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8.html"><![CDATA[<h2 id="表示并列">表示并列</h2>
 <p>连接两个名词：<code class="language-plaintext highlighter-rouge">AとB</code> = “A和B”</p>
 
 <h2 id="表示动作的共同参与者">表示动作的共同参与者</h2>
