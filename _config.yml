@@ -152,8 +152,8 @@ defaults:
     subheading: "Nice to meet you. I am hulakk."
     banner: 
       image: "https://cdn.pixabay.com/photo/2023/01/03/10/58/goals-7694141_960_720.png"
-      heading_style: "color:balck;font-weight:bold"
-      subheading_style: "color:balck;font-weight:bold"
+      heading_style: "color: balck;font-weight: bold"
+      subheading_style: "color: balck;font-weight: bold"
       opacity: 0.8
 
 # Banner default settings
