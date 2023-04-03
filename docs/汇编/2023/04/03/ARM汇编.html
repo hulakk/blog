@@ -807,7 +807,7 @@ function googleTranslateElementInit() {
 
 
 
-    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 10 mins</span>
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 14 mins</span>
   </p>
 <div class="post-tags">
 <a class="post-tag" href="/blog/tags.html#%E8%AE%A1%E7%AE%97%E6%9C%BA">#计算机</a><a class="post-tag" href="/blog/tags.html#CS">#CS</a><a class="post-tag" href="/blog/tags.html#%E6%B1%87%E7%BC%96">#汇编</a><a class="post-tag" href="/blog/tags.html#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F">#嵌入式系统</a>
@@ -863,40 +863,176 @@ ADD_SUB
 <p>在寄存器方式下，操作数即为寄存器的数值。</p>
 <h3 id="寄存器移位方式">寄存器移位方式</h3>
 <p>将寄存器的移位结果作为操作数，但所提到的寄存器本身的值保持不变。<br>
-移位方式：<br>
-|操作码|说明|
-|—– |—|
-|ASR #n |算术右移n位|
-|LSL #n |逻辑左移n位|
-|LSR #n |逻辑右移n位|
-|ROR #n |循环右移n位|
-|RRX    |带扩展的循环右移1位|
-|Type Rs|Type为移位的一种类型，Rs为偏移量寄存器，低8位有效|<br>
-示例：</p>
+移位方式：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>操作码</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ASR #n</td>
+      <td>算术右移n位</td>
+    </tr>
+    <tr>
+      <td>LSL #n</td>
+      <td>逻辑左移n位</td>
+    </tr>
+    <tr>
+      <td>LSR #n</td>
+      <td>逻辑右移n位</td>
+    </tr>
+    <tr>
+      <td>ROR #n</td>
+      <td>循环右移n位</td>
+    </tr>
+    <tr>
+      <td>RRX</td>
+      <td>带扩展的循环右移1位</td>
+    </tr>
+    <tr>
+      <td>Type Rs</td>
+      <td>Type为移位的一种类型，Rs为偏移量寄存器，低8位有效</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>示例：</p>
 <pre><code class="language-asm">ADD	R1,R1,R1,LSL #3	;R1=R1+R1*8=9R1 ;“R1,LSL # 3”为一个整体
 SUB	R1,R1,R2,LSR R3	;R1=R1-(R2/2^R3) ;“R2,LSR R3”为一个整体
 </code></pre>
 
 <h2 id="-条件码"><cond> 条件码</cond></h2>
-<p>绝大部分的ARM指令都可以条件执行，而Thumb指令只有B（跳转）指令具有条件执行 功能。如果指令不标明条件代码，将默认为无条件（AL）执行。<br>
-|操作码|条件助记符|标志|含义|
-|—–|———-|—-|—|
-|0|EQ|Z=1|相等|
-|1|NE|Z=0|不相等|
-|10|CS/HS|C=1|无符号数大于或等于|
-|11|CC/LO|C=0|无符号数小于|
-|100|MI|N=1|负数|
-|101|PL|N=0|正数或零|
-|110|VS|V=1|溢出|
-|111|VC|V=0|没有溢出|
-|1000|HI|C=1|Z=0|无符号数大于|
-|1001|LS|C=0|Z=1|无符号数小于或等于|
-|1010|GE|N=V|有符号数大于或等于|
-|1011|LT|N!=V|有符号数小于| 
-|1100|GT|Z=0|N=V|有符号数大于|
-|1101|LE|Z=1|N!=V|有符号数小于或等于| 
-|1110|AL|任何|无条件执行 (指令默认条件)| 
-|1111|NV|任何|从不执行(不要使用)|</p>
+<p>绝大部分的ARM指令都可以条件执行，而Thumb指令只有B（跳转）指令具有条件执行 功能。如果指令不标明条件代码，将默认为无条件（AL）执行。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">操作码</th>
+      <th style="text-align: left">条件助记符</th>
+      <th style="text-align: left">标志</th>
+      <th style="text-align: left">含义</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">EQ</td>
+      <td style="text-align: left">Z=1</td>
+      <td style="text-align: left">相等</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">NE</td>
+      <td style="text-align: left">Z=0</td>
+      <td style="text-align: left">不相等</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left">CS/HS</td>
+      <td style="text-align: left">C=1</td>
+      <td style="text-align: left">无符号数大于或等于</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">11</td>
+      <td style="text-align: left">CC/LO</td>
+      <td style="text-align: left">C=0</td>
+      <td style="text-align: left">无符号数小于</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">100</td>
+      <td style="text-align: left">MI</td>
+      <td style="text-align: left">N=1</td>
+      <td style="text-align: left">负数</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">101</td>
+      <td style="text-align: left">PL</td>
+      <td style="text-align: left">N=0</td>
+      <td style="text-align: left">正数或零</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">110</td>
+      <td style="text-align: left">VS</td>
+      <td style="text-align: left">V=1</td>
+      <td style="text-align: left">溢出</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">111</td>
+      <td style="text-align: left">VC</td>
+      <td style="text-align: left">V=0</td>
+      <td style="text-align: left">没有溢出</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1000</td>
+      <td style="text-align: left">HI</td>
+      <td style="text-align: left">C=1</td>
+      <td style="text-align: left">Z=0</td>
+      <td>无符号数大于</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1001</td>
+      <td style="text-align: left">LS</td>
+      <td style="text-align: left">C=0</td>
+      <td style="text-align: left">Z=1</td>
+      <td>无符号数小于或等于</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1010</td>
+      <td style="text-align: left">GE</td>
+      <td style="text-align: left">N=V</td>
+      <td style="text-align: left">有符号数大于或等于</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1011</td>
+      <td style="text-align: left">LT</td>
+      <td style="text-align: left">N!=V</td>
+      <td style="text-align: left">有符号数小于</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1100</td>
+      <td style="text-align: left">GT</td>
+      <td style="text-align: left">Z=0</td>
+      <td style="text-align: left">N=V</td>
+      <td>有符号数大于</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1101</td>
+      <td style="text-align: left">LE</td>
+      <td style="text-align: left">Z=1</td>
+      <td style="text-align: left">N!=V</td>
+      <td>有符号数小于或等于</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1110</td>
+      <td style="text-align: left">AL</td>
+      <td style="text-align: left">任何</td>
+      <td style="text-align: left">无条件执行(指令默认条件)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">1111</td>
+      <td style="text-align: left">NV</td>
+      <td style="text-align: left">任何</td>
+      <td style="text-align: left">从不执行(不要使用)</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="arm指令种类">ARM指令种类</h2>
 <ul>
@@ -919,56 +1055,102 @@ SUB	R1,R1,R2,LSR R3	;R1=R1-(R2/2^R3) ;“R2,LSR R3”为一个整体
 <pre><code class="language-asm">LDR &lt;目标寄存器&gt;,&lt;源地址&gt;   ;装载指令(存储器-&gt;寄存器)
 STR &lt;源寄存器&gt;,&lt;目标地址&gt;   ;存储指令(寄存器-&gt;存储器)
 </code></pre>
-<p>LDR/STR指令搭配不同的后缀实现不同方式的单寄存器存取操作:<br>
-|助记符|说明|操作|条件码位置|
-|——|—|—-|———|
-|LDR Rd,addressing |加载字数据|Rd←[addressing],addressing索引|LDR{cond}|
-|LDRB Rd,addressing|加载无符号字节数据|Rd←[addressing],addressing索引|LDR{cond}B|
-|LDRT Rd,addressing|以用户模式加载字数据|Rd←[addressing],addressing索引|LDR{cond}T|
-|LDRBT Rd,addressing|以用户模式加载无符号|Rd←[addressing],addressing索引|LDR{cond}BT|
-|LDRH Rd,addressing|加载无符号半字数据|Rd←[addressing],addressing索引|LDR{cond}H|
-|LDRSB Rd,addressing|加载有符号字节数据|Rd←[addressing],addressing索引|LDR{cond}SB|
-|LDRSH Rd,addressing|加载有符号半字数据|Rd←[addressing],addressing索引|LDR{cond}SH|</p>
+<p>LDR/STR指令搭配不同的后缀实现不同方式的单寄存器存取操作:</p>
 
 <table>
   <thead>
     <tr>
-      <th>助记符</th>
-      <th>说明</th>
-      <th>操作</th>
-      <th>条件码位置</th>
+      <th style="text-align: left">助记符</th>
+      <th style="text-align: left">说明</th>
+      <th style="text-align: left">操作</th>
+      <th style="text-align: left">条件码位置</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>STR Rd, addressing</td>
-      <td>存储字数据</td>
-      <td>[addressing]←Rd,addressing索引</td>
-      <td>STR{cond}</td>
+      <td style="text-align: left">LDR Rd,addressing</td>
+      <td style="text-align: left">加载字数据</td>
+      <td style="text-align: left">Rd←[addressing],addressing索引</td>
+      <td style="text-align: left">LDR{cond}</td>
     </tr>
     <tr>
-      <td>STRB Rd,addressing</td>
-      <td>存储字节数据</td>
-      <td>[addressing]←Rd,addressing索引</td>
-      <td>STR{cond}B</td>
+      <td style="text-align: left">LDRB Rd,addressing</td>
+      <td style="text-align: left">加载无符号字节数据</td>
+      <td style="text-align: left">Rd←[addressing],addressing索引</td>
+      <td style="text-align: left">LDR{cond}B</td>
     </tr>
     <tr>
-      <td>STRT Rd,addressing</td>
-      <td>以用户模式存储字数据</td>
-      <td>[addressing]←Rd,addressing索引</td>
-      <td>STR{cond}T</td>
+      <td style="text-align: left">LDRT Rd,addressing</td>
+      <td style="text-align: left">以用户模式加载字数据</td>
+      <td style="text-align: left">Rd←[addressing],addressing索引</td>
+      <td style="text-align: left">LDR{cond}T</td>
     </tr>
     <tr>
-      <td>STRBT Rd,addressing</td>
-      <td>以用户模式存储字节数据</td>
-      <td>[addressing]←Rd,addressing索引</td>
-      <td>STR{cond}BT</td>
+      <td style="text-align: left">LDRBT Rd,addressing</td>
+      <td style="text-align: left">以用户模式加载无符号</td>
+      <td style="text-align: left">Rd←[addressing],addressing索引</td>
+      <td style="text-align: left">LDR{cond}BT</td>
     </tr>
     <tr>
-      <td>STRH Rd,addressing</td>
-      <td>存储半字数据</td>
-      <td>[addressing]←Rd,addressing索引</td>
-      <td>STR{cond}H</td>
+      <td style="text-align: left">LDRH Rd,addressing</td>
+      <td style="text-align: left">加载无符号半字数据</td>
+      <td style="text-align: left">Rd←[addressing],addressing索引</td>
+      <td style="text-align: left">LDR{cond}H</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">LDRSB Rd,addressing</td>
+      <td style="text-align: left">加载有符号字节数据</td>
+      <td style="text-align: left">Rd←[addressing],addressing索引</td>
+      <td style="text-align: left">LDR{cond}SB</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">LDRSH Rd,addressing</td>
+      <td style="text-align: left">加载有符号半字数据</td>
+      <td style="text-align: left">Rd←[addressing],addressing索引</td>
+      <td style="text-align: left">LDR{cond}SH</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">助记符</th>
+      <th style="text-align: left">说明</th>
+      <th style="text-align: left">操作</th>
+      <th style="text-align: left">条件码位置</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">STR Rd,addressing</td>
+      <td style="text-align: left">存储字数据</td>
+      <td style="text-align: left">[addressing]←Rd,addressing索引</td>
+      <td style="text-align: left">STR{cond}</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">STRB Rd,addressing</td>
+      <td style="text-align: left">存储字节数据</td>
+      <td style="text-align: left">[addressing]←Rd,addressing索引</td>
+      <td style="text-align: left">STR{cond}B</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">STRT Rd,addressing</td>
+      <td style="text-align: left">以用户模式存储字数据</td>
+      <td style="text-align: left">[addressing]←Rd,addressing索引</td>
+      <td style="text-align: left">STR{cond}T</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">STRBT Rd,addressing</td>
+      <td style="text-align: left">以用户模式存储字节数据</td>
+      <td style="text-align: left">[addressing]←Rd,addressing索引</td>
+      <td style="text-align: left">STR{cond}BT</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">STRH Rd,addressing</td>
+      <td style="text-align: left">存储半字数据</td>
+      <td style="text-align: left">[addressing]←Rd,addressing索引</td>
+      <td style="text-align: left">STR{cond}H</td>
     </tr>
   </tbody>
 </table>
@@ -1005,10 +1187,10 @@ STM &lt;目标地址&gt;,&lt;源寄存器列表&gt;  ;存储指令(寄存器-&gt
 <div class="post-related">
       <div>Related Articles</div>
       <ul>
-        <li><a class="post-link" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E3%81%A6%E3%81%84%E3%81%8F&amp;%E3%81%A6%E3%81%84%E3%82%8B.html" title="">【动】てくる &amp; 【动】ていく</a></li>
-<li><a class="post-link" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8.html" title="">助词と的用法</a></li>
+        <li><a class="post-link" href="/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html" title="">ARM汇编基础</a></li>
 <li><a class="post-link" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E5%B0%8A%E4%BB%96%E8%AF%AD.html" title="">尊他语</a></li>
-<li><a class="post-link" href="/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html" title="">ARM汇编基础</a></li>
+<li><a class="post-link" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E8%87%AA%E8%B0%A6%E8%AF%AD.html" title="">自谦语</a></li>
+<li><a class="post-link" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB.html" title="">助词に的用法</a></li>
 </ul>
     </div>
 <div class="post-comments">
