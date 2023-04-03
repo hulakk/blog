@@ -7,22 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>助词と的用法 | Hulakk’s Personal Blog</title>
+<title>ARM汇编基础 | Hulakk’s Personal Blog</title>
 <meta name="generator" content="Jekyll v4.3.2">
-<meta property="og:title" content="助词と的用法">
+<meta property="og:title" content="ARM汇编基础">
 <meta name="author" content="hulakk">
 <meta property="og:locale" content="zh_CN">
-<meta name="description" content="表示并列 连接两个名词：AとB = “A和B”">
-<meta property="og:description" content="表示并列 连接两个名词：AとB = “A和B”">
-<link rel="canonical" href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8.html">
-<meta property="og:url" content="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8.html">
+<meta name="description" content="整体框架 ;文件名：TEST1.S ;功能：实现两个寄存器相加 ;说明：使用ARMulate软件仿真调试 AREA Example1,CODE,READONLY ;声明代码段Example1 ENTRY ;标识程序入口 CODE32 ;声明32位ARM指令 START MOV R0,#0 ;设置参数 MOV R1,#10 LOOP BL ADD_SUB ;调用子程序ADD_SUB B LOOP ;跳转到LOOP ADD_SUB ADDS R0,R0,R1 ;R0 = R0 + R1 MOV PC,LR ;子程序返回 END ;文件结束 说明： 1.注释以“;”开头 2.标号（以上代码中的“START”“LOOP”“ADD_SUB”）定格写 3.以“END”结尾 4.尖括号（“&lt;&gt;”）包含的内容是必须的，花括号（“{}”）包含的内容是可选的">
+<meta property="og:description" content="整体框架 ;文件名：TEST1.S ;功能：实现两个寄存器相加 ;说明：使用ARMulate软件仿真调试 AREA Example1,CODE,READONLY ;声明代码段Example1 ENTRY ;标识程序入口 CODE32 ;声明32位ARM指令 START MOV R0,#0 ;设置参数 MOV R1,#10 LOOP BL ADD_SUB ;调用子程序ADD_SUB B LOOP ;跳转到LOOP ADD_SUB ADDS R0,R0,R1 ;R0 = R0 + R1 MOV PC,LR ;子程序返回 END ;文件结束 说明： 1.注释以“;”开头 2.标号（以上代码中的“START”“LOOP”“ADD_SUB”）定格写 3.以“END”结尾 4.尖括号（“&lt;&gt;”）包含的内容是必须的，花括号（“{}”）包含的内容是可选的">
+<link rel="canonical" href="https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html">
+<meta property="og:url" content="https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html">
 <meta property="og:site_name" content="Hulakk’s Personal Blog">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2023-03-31T00:00:00+08:00">
+<meta property="article:published_time" content="2023-04-03T00:00:00+08:00">
 <meta name="twitter:card" content="summary">
-<meta property="twitter:title" content="助词と的用法">
+<meta property="twitter:title" content="ARM汇编基础">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"hulakk"},"dateModified":"2023-03-31T00:00:00+08:00","datePublished":"2023-03-31T00:00:00+08:00","description":"表示并列 连接两个名词：AとB = “A和B”","headline":"助词と的用法","mainEntityOfPage":{"@type":"WebPage","@id":"https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8.html"},"url":"https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"hulakk"},"dateModified":"2023-04-03T00:00:00+08:00","datePublished":"2023-04-03T00:00:00+08:00","description":"整体框架 ;文件名：TEST1.S ;功能：实现两个寄存器相加 ;说明：使用ARMulate软件仿真调试 AREA Example1,CODE,READONLY ;声明代码段Example1 ENTRY ;标识程序入口 CODE32 ;声明32位ARM指令 START MOV R0,#0 ;设置参数 MOV R1,#10 LOOP BL ADD_SUB ;调用子程序ADD_SUB B LOOP ;跳转到LOOP ADD_SUB ADDS R0,R0,R1 ;R0 = R0 + R1 MOV PC,LR ;子程序返回 END ;文件结束 说明： 1.注释以“;”开头 2.标号（以上代码中的“START”“LOOP”“ADD_SUB”）定格写 3.以“END”结尾 4.尖括号（“&lt;&gt;”）包含的内容是必须的，花括号（“{}”）包含的内容是可选的","headline":"ARM汇编基础","mainEntityOfPage":{"@type":"WebPage","@id":"https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html"},"url":"https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/optical-illusion/283/illusion-08-512.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -766,11 +766,11 @@ function googleTranslateElementInit() {
 
 
 <header class="post-header">
-  <h1 class="post-title p-name" itemprop="name headline">助词と的用法</h1>
+  <h1 class="post-title p-name" itemprop="name headline">ARM汇编基础</h1>
   <h2 class="post-subtitle"></h2>
 
   <p class="post-meta">
-    <time class="dt-published" datetime="2023-03-31T00:00:00+08:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Mar 31, 2023
+    <time class="dt-published" datetime="2023-04-03T00:00:00+08:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Apr 03, 2023
     </time>
 
     
@@ -807,69 +807,208 @@ function googleTranslateElementInit() {
 
 
 
-    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 10 mins</span>
   </p>
-<div class="post-tags"><a class="post-tag" href="/blog/tags.html#%E6%97%A5%E8%AF%AD">#日语</a></div></header>
+<div class="post-tags">
+<a class="post-tag" href="/blog/tags.html#%E8%AE%A1%E7%AE%97%E6%9C%BA">#计算机</a><a class="post-tag" href="/blog/tags.html#CS">#CS</a><a class="post-tag" href="/blog/tags.html#%E6%B1%87%E7%BC%96">#汇编</a><a class="post-tag" href="/blog/tags.html#%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%B3%BB%E7%BB%9F">#嵌入式系统</a>
+</div></header>
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
     <div class="post-content e-content" itemprop="articleBody">
 
-      <h2 id="表示并列">表示并列</h2>
-<p>连接两个名词：<code class="language-plaintext highlighter-rouge">AとB</code> = “A和B”</p>
+      <h2 id="整体框架">整体框架</h2>
+<pre><code class="language-asm">;文件名：TEST1.S 
+;功能：实现两个寄存器相加 
+;说明：使用ARMulate软件仿真调试 
+        AREA	Example1,CODE,READONLY	  ;声明代码段Example1 
+        ENTRY				  ;标识程序入口 
+        CODE32				  ;声明32位ARM指令
+START 	MOV	R0,#0			  ;设置参数 
+ 	    MOV	R1,#10
+LOOP	BL	ADD_SUB	    	  ;调用子程序ADD_SUB 
+	    B	LOOP			  ;跳转到LOOP
+ADD_SUB	 
+        ADDS	R0,R0,R1      ;R0 = R0 + R1 
+        MOV	PC,LR             ;子程序返回 
+        END                   ;文件结束 
+</code></pre>
+<p>说明：
+1.注释以“;”开头<br>
+2.标号（以上代码中的“START”“LOOP”“ADD_SUB”）定格写<br>
+3.以“END”结尾<br>
+4.尖括号（“&lt;&gt;”）包含的内容是必须的，花括号（“{}”）包含的内容是可选的</p>
 
-<h2 id="表示动作的共同参与者">表示动作的共同参与者</h2>
-<p>放在表示【共同参与者】的名词之后。<br>
-<code class="language-plaintext highlighter-rouge">ｘｘと</code>　＝ “和XX一起”</p>
+<h2 id="单条指令格式">单条指令格式</h2>
+<pre><code class="language-asm">&lt;opcode&gt;    {&lt;cond&gt;}     {S}                    &lt;Rd&gt;        ,&lt;Rn&gt;                   {,&lt;operand2&gt;} 
+&lt;指令助记符&gt; {&lt;执行条件&gt;} {是否影响CPSR寄存器的值} &lt;目标寄存器&gt; ,&lt;第一个操作数的寄存器&gt;   {,&lt;第二个操作数&gt;}
+</code></pre>
 
-<h2 id="表示条件">表示条件</h2>
-<p>一旦条件满足，结果必然发生。包括自然现象、生理现象、固定习惯、机械操作、社会规则等。</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>【普通形（な形+だ，名词+だ）】と······
-</code></pre></div></div>
-<p>前面是条件，后面是结果。<br>
-结果不可为意志性的。</p>
-
-<p>例句：</p>
+<h2 id="operand2-第二个操作数">&lt;operand2&gt; 第二个操作数</h2>
+<p>&lt;operand2&gt;有如下三种形式：</p>
 <ul>
-  <li>春になると桜が咲きます。<br>
-春天一到，樱花就开了。</li>
-  <li>このつもみを右に回すと 音が大さくなります。<br>
-向右转这个旋钮，声音就会变大。</li>
-  <li>この予算だと東京都内の賃貸物件は難しい。<br>
-这个预算的话，东京都内的出租房子很困难。</li>
-  <li>美人やイクメンだと得することが多い。<br>
-是美女、帅哥之类的话，吃香得多。</li>
-  <li>次の信号を右に曲がると市役所があります。<br>
-在下一个红绿灯右转，就有市政厅。</li>
-  <li>薬を飲まないと病気は治りませんよ。<br>
-不吃药，病就不可能好哦。</li>
+  <li>常数表达式形式</li>
+  <li>寄存器形式</li>
+  <li>寄存器移位形式</li>
 </ul>
 
-<h2 id="表示相互动作的对象">表示相互动作的对象</h2>
-<p>另一个表示动作的对象的助词是“に”，“と”和“に”的区别在于，“と”用在动作相互进行的场合（A对B进行，B也对A进行，如“争吵”），“に”用在单向动作的场合</p>
+<h3 id="常数表达式形式immed_8r">常数表达式形式（#immed_8r）</h3>
+<p><strong>该常数必须对应8位位图，即必须是一个8位的常数通过循环右移偶数位可以得到的数。</strong><br>
+移位前：<code class="language-plaintext highlighter-rouge">00000000 00000000 00000000 xxxxxxxx</code><br>
+将这个32位数（除了最后8位都是0）向右循环移位任意偶数位（但要在1轮以内），即得到一个新的32位数（称为<code class="language-plaintext highlighter-rouge">8位图立即数</code>），<strong>将这个32位二进制数写入汇编代码中</strong>。<br>
+这样，新的32位数就可以用<code class="language-plaintext highlighter-rouge">8位数值位</code>和<code class="language-plaintext highlighter-rouge">4位移位数</code>组成的12位二进制编码表示。由于用12位二进制编码来表示32位二进制数，因此有些32位二进制数无法被表示。</p>
 
-<h2 id="表示引用说话思考的内容">表示引用说话、思考的内容</h2>
-<h2 id="表示比较的对象或比较的基准">表示比较的对象、或比较的基准</h2>
-<h2 id="用来修饰后续的动词相当于汉语中的地">用来修饰后续的动词，相当于汉语中的“地”</h2>
-<p>接在副词、名词等之后，用来修饰后续的动词，相当于汉语中的“地”。</p>
+<p>参考资料：<a href="https://blog.csdn.net/harrymore2011/article/details/6657927">CSDN</a></p>
 
-<h2 id="参考资料">参考资料</h2>
-<p><a href="https://zhuanlan.zhihu.com/p/65320065">高考日语常考助词之「と」的11种用法</a><br>
-<a href="https://www.youtube.com/watch?v=9f2BnjvKOW8">【Ｎ４文法】～と（条件）</a></p>
+<h3 id="寄存器形式">寄存器形式</h3>
+<p>在寄存器方式下，操作数即为寄存器的数值。</p>
+<h3 id="寄存器移位方式">寄存器移位方式</h3>
+<p>将寄存器的移位结果作为操作数，但所提到的寄存器本身的值保持不变。<br>
+移位方式：<br>
+|操作码|说明|
+|—– |—|
+|ASR #n |算术右移n位|
+|LSL #n |逻辑左移n位|
+|LSR #n |逻辑右移n位|
+|ROR #n |循环右移n位|
+|RRX    |带扩展的循环右移1位|
+|Type Rs|Type为移位的一种类型，Rs为偏移量寄存器，低8位有效|<br>
+示例：</p>
+<pre><code class="language-asm">ADD	R1,R1,R1,LSL #3	;R1=R1+R1*8=9R1 ;“R1,LSL # 3”为一个整体
+SUB	R1,R1,R2,LSR R3	;R1=R1-(R2/2^R3) ;“R2,LSR R3”为一个整体
+</code></pre>
+
+<h2 id="-条件码"><cond> 条件码</cond></h2>
+<p>绝大部分的ARM指令都可以条件执行，而Thumb指令只有B（跳转）指令具有条件执行 功能。如果指令不标明条件代码，将默认为无条件（AL）执行。<br>
+|操作码|条件助记符|标志|含义|
+|—–|———-|—-|—|
+|0|EQ|Z=1|相等|
+|1|NE|Z=0|不相等|
+|10|CS/HS|C=1|无符号数大于或等于|
+|11|CC/LO|C=0|无符号数小于|
+|100|MI|N=1|负数|
+|101|PL|N=0|正数或零|
+|110|VS|V=1|溢出|
+|111|VC|V=0|没有溢出|
+|1000|HI|C=1|Z=0|无符号数大于|
+|1001|LS|C=0|Z=1|无符号数小于或等于|
+|1010|GE|N=V|有符号数大于或等于|
+|1011|LT|N!=V|有符号数小于| 
+|1100|GT|Z=0|N=V|有符号数大于|
+|1101|LE|Z=1|N!=V|有符号数小于或等于| 
+|1110|AL|任何|无条件执行 (指令默认条件)| 
+|1111|NV|任何|从不执行(不要使用)|</p>
+
+<h2 id="arm指令种类">ARM指令种类</h2>
+<ul>
+  <li>存储器访问指令</li>
+  <li>数据处理指令</li>
+  <li>乘法指令</li>
+  <li>ARM分支指令</li>
+  <li>协处理器指令</li>
+  <li>杂项指令</li>
+  <li>伪指令</li>
+</ul>
+
+<h3 id="存储器访问指令">存储器访问指令</h3>
+<p>ARM处理器是典型的RISC处理器，对存储器的访问只能使用加载和存储指令实现。<br>
+存储器访问指令分为单寄存器操作指令和多寄存器操作指令。<br>
+<code class="language-plaintext highlighter-rouge">LDR</code>/<code class="language-plaintext highlighter-rouge">STR</code>指令用于对内存变量的访问、内存缓冲区数据的访问、查表、外围部件的控制操作等。若使用<code class="language-plaintext highlighter-rouge">LDR</code>指令加载数据到PC寄存器，则实现程序跳转功能，这样也就实现了程序散转。</p>
+
+<h4 id="单寄存器">单寄存器</h4>
+<p>所有单寄存器加载/存储指令可分为“<strong>字和无符号字节加载存储指令</strong>”和“<strong>半字和有符号字节加载存储指令</strong>”。</p>
+<pre><code class="language-asm">LDR &lt;目标寄存器&gt;,&lt;源地址&gt;   ;装载指令(存储器-&gt;寄存器)
+STR &lt;源寄存器&gt;,&lt;目标地址&gt;   ;存储指令(寄存器-&gt;存储器)
+</code></pre>
+<p>LDR/STR指令搭配不同的后缀实现不同方式的单寄存器存取操作:<br>
+|助记符|说明|操作|条件码位置|
+|——|—|—-|———|
+|LDR Rd,addressing |加载字数据|Rd←[addressing],addressing索引|LDR{cond}|
+|LDRB Rd,addressing|加载无符号字节数据|Rd←[addressing],addressing索引|LDR{cond}B|
+|LDRT Rd,addressing|以用户模式加载字数据|Rd←[addressing],addressing索引|LDR{cond}T|
+|LDRBT Rd,addressing|以用户模式加载无符号|Rd←[addressing],addressing索引|LDR{cond}BT|
+|LDRH Rd,addressing|加载无符号半字数据|Rd←[addressing],addressing索引|LDR{cond}H|
+|LDRSB Rd,addressing|加载有符号字节数据|Rd←[addressing],addressing索引|LDR{cond}SB|
+|LDRSH Rd,addressing|加载有符号半字数据|Rd←[addressing],addressing索引|LDR{cond}SH|</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>助记符</th>
+      <th>说明</th>
+      <th>操作</th>
+      <th>条件码位置</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>STR Rd, addressing</td>
+      <td>存储字数据</td>
+      <td>[addressing]←Rd,addressing索引</td>
+      <td>STR{cond}</td>
+    </tr>
+    <tr>
+      <td>STRB Rd,addressing</td>
+      <td>存储字节数据</td>
+      <td>[addressing]←Rd,addressing索引</td>
+      <td>STR{cond}B</td>
+    </tr>
+    <tr>
+      <td>STRT Rd,addressing</td>
+      <td>以用户模式存储字数据</td>
+      <td>[addressing]←Rd,addressing索引</td>
+      <td>STR{cond}T</td>
+    </tr>
+    <tr>
+      <td>STRBT Rd,addressing</td>
+      <td>以用户模式存储字节数据</td>
+      <td>[addressing]←Rd,addressing索引</td>
+      <td>STR{cond}BT</td>
+    </tr>
+    <tr>
+      <td>STRH Rd,addressing</td>
+      <td>存储半字数据</td>
+      <td>[addressing]←Rd,addressing索引</td>
+      <td>STR{cond}H</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>规律：</p>
+<ol>
+  <li>有<code class="language-plaintext highlighter-rouge">B</code>为“字节”数据，有<code class="language-plaintext highlighter-rouge">H</code>的是“半字”数据，都没有则为“字”数据</li>
+  <li>有<code class="language-plaintext highlighter-rouge">T</code>则以用户模式加载，否则不以用户模式加载</li>
+  <li>有<code class="language-plaintext highlighter-rouge">S</code>则为有符号数据，否则为无符号数据</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">LDR</code>/<code class="language-plaintext highlighter-rouge">STR</code>最前，条件码在中，后缀在后</li>
+</ol>
+
+<h4 id="多寄存器">多寄存器</h4>
+<p>多寄存器加载/存储指令可以实现在一组寄存器和一块连续的内存单元之间传输数据。LDM为加载多个寄存器；STM为存储多个寄存器。允许一条指令传送16个寄存器的任何子集或所有寄存器。它们主要用于现场保护、数据复制、常数传递等。</p>
+<pre><code class="language-asm">LDM &lt;源地址&gt;,&lt;目标寄存器列表&gt;   ;装载指令(存储器-&gt;寄存器)
+STM &lt;目标地址&gt;,&lt;源寄存器列表&gt;  ;存储指令(寄存器-&gt;存储器)
+</code></pre>
+<p>LDM/STM指令搭配不同的后缀实现不同方式地址增长方式：</p>
+<ul>
+  <li>IA： 每次传送后地址加4</li>
+  <li>IB： 每次传送前地址加4</li>
+  <li>DA：每次传送后地址减4</li>
+  <li>DB：每次传送前地址减4</li>
+</ul>
 
 
     </div>
 
 </article>
 <div class="post-nav">
-<a class="previous" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E3%81%A6%E3%81%84%E3%81%8F&amp;%E3%81%A6%E3%81%84%E3%82%8B.html" title="【动】てくる &amp; 【动】ていく">【动】てくる &amp; 【动】ていく</a><a class="next" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB.html" title="助词に的用法">助词に的用法</a>
+<a class="previous" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB.html" title="助词に的用法">助词に的用法</a><span></span>
 </div>
 <div class="post-related">
       <div>Related Articles</div>
       <ul>
-        <li><a class="post-link" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E5%B0%8A%E4%BB%96%E8%AF%AD.html" title="助词に的用法">尊他语</a></li>
-<li><a class="post-link" href="/blog/%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86/2023/03/30/hello-world.html" title="助词に的用法">博客管理</a></li>
-<li><a class="post-link" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E3%81%A6%E3%81%84%E3%81%8F&amp;%E3%81%A6%E3%81%84%E3%82%8B.html" title="助词に的用法">【动】てくる &amp; 【动】ていく</a></li>
-<li><a class="post-link" href="/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html" title="助词に的用法">ARM汇编基础</a></li>
+        <li><a class="post-link" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E3%81%A6%E3%81%84%E3%81%8F&amp;%E3%81%A6%E3%81%84%E3%82%8B.html" title="">【动】てくる &amp; 【动】ていく</a></li>
+<li><a class="post-link" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%A8.html" title="">助词と的用法</a></li>
+<li><a class="post-link" href="/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/29/%E5%B0%8A%E4%BB%96%E8%AF%AD.html" title="">尊他语</a></li>
+<li><a class="post-link" href="/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html" title="">ARM汇编基础</a></li>
 </ul>
     </div>
 <div class="post-comments">
