@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hulakk.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hulakk.github.io/blog/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2023-04-03T18:14:13+08:00</updated><id>https://hulakk.github.io/blog/feed.xml</id><title type="html">Hulakk’s Personal Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>hulakk</name></author><entry><title type="html">ARM汇编基础</title><link href="https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html" rel="alternate" type="text/html" title="ARM汇编基础" /><published>2023-04-03T00:00:00+08:00</published><updated>2023-04-03T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html"><![CDATA[<h2 id="整体框架">整体框架</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hulakk.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hulakk.github.io/blog/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2023-04-03T20:11:24+08:00</updated><id>https://hulakk.github.io/blog/feed.xml</id><title type="html">Hulakk’s Personal Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>hulakk</name></author><entry><title type="html">ARM汇编基础</title><link href="https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html" rel="alternate" type="text/html" title="ARM汇编基础" /><published>2023-04-03T00:00:00+08:00</published><updated>2023-04-03T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html"><![CDATA[<h2 id="整体框架">整体框架</h2>
 <pre><code class="language-asm">;文件名：TEST1.S 
 ;功能：实现两个寄存器相加 
 ;说明：使用ARMulate软件仿真调试 
@@ -20,6 +20,35 @@ ADD_SUB
 3.以“END”结尾<br />
 4.尖括号（“&lt;&gt;”）包含的内容是必须的，花括号（“{}”）包含的内容是可选的</p>
 
+<h2 id="寻址方式">寻址方式</h2>
+<p>寻址方式是根据指令中给出的地址码字段来实现寻找真实操作数地址的方式。ARM处理器具有9种基本寻址方式。</p>
+<ol>
+  <li>寄存器寻址<br />
+操作数的值在寄存器中，指令中的地址码字段指出的是寄存器编号，指令执行时直接取出寄存器值来操作。<br />
+寄存器存储的值本身就是操作数，直接用<code class="language-plaintext highlighter-rouge">R1</code>、<code class="language-plaintext highlighter-rouge">R2</code>等即可。</li>
+  <li>立即寻址<br />
+立即寻址指令中的操作码字段后面的地址码部分即是操作数本身，也就是说，数据就包含在指令当中，取出指令也就取出了可以立即使用的操作数(这样的数称为立即数)。<br />
+用<code class="language-plaintext highlighter-rouge">#</code>开头，后面写数值，该数值即操作数本身，有前缀<code class="language-plaintext highlighter-rouge">0x</code>则为十六进制，没有前缀默认为十进制。<br />
+如<code class="language-plaintext highlighter-rouge">#100</code>、<code class="language-plaintext highlighter-rouge">#0xFE76</code>。</li>
+  <li>寄存器移位寻址<br />
+寄存器移位寻址是ARM指令集特有的寻址方式。当第2个操作数是寄存器移位方式时，第2个寄存器操作数在与第1个操作数结合之前，选择进行移位操作。<br />
+寄存器存储的值本身就是操作数，但要进一步移位后得到需要的操作数，例如<code class="language-plaintext highlighter-rouge">R2,LSL #3</code>。</li>
+  <li>寄存器间接寻址<br />
+寄存器间接寻址指令中的地址码给出的是一个通用寄存器的编号，所需的操作数保存在寄存器指定地址的存储单元中，即寄存器为操作数的地址指针。<br />
+寄存器存储的值是地址，用<code class="language-plaintext highlighter-rouge">[]</code>包含一个储存地址值的寄存器，代表该地址所指向的位置中的操作数。</li>
+  <li>基址寻址
+基址寻址就是将基址寄存器的内容与指令中给出的偏移量相加，形成操作数的有效地址。基址寻址用于访问基址附近的存储单元，常用于查表、数组操作、功能部件寄存器访问等。<br />
+寄存器存储的值是地址，例如<code class="language-plaintext highlighter-rouge">[R3,#0x0C]</code>表示地址为<code class="language-plaintext highlighter-rouge">R3+0x0c</code>位置内的操作数，<code class="language-plaintext highlighter-rouge">[R0,#-4]</code>表示地址为<code class="language-plaintext highlighter-rouge">R0-4</code>位置内的操作数。</li>
+  <li>多寄存器寻址
+多寄存器寻址一次可传送几个寄存器值，允许一条指令传送16个寄存器的任何子集或所有寄存器。</li>
+  <li>堆栈寻址
+堆栈是一个按特定顺序进行存取的存储区，操作顺序为“后进先出” 。堆栈寻址是隐含的，它使用一个专门的寄存器(堆栈指针)指向一块存储区域(堆栈)，指针所指向的存储单元即是堆栈的栈顶。存储器堆栈可分为两种： <br />
+向上生长：向高地址方向生长，称为递增堆栈<br />
+向下生长：向低地址方向生长，称为递减堆栈</li>
+  <li>相对寻址
+相对寻址是基址寻址的一种变通。由程序计数器PC提供基准地址，指令中的地址码字段作为偏移量，两者相加后得到的地址即为操作数的有效地址。</li>
+</ol>
+
 <h2 id="单条指令格式">单条指令格式</h2>
 <pre><code class="language-asm">&lt;opcode&gt;    {&lt;cond&gt;}     {S}                    &lt;Rd&gt;        ,&lt;Rn&gt;                   {,&lt;operand2&gt;} 
 &lt;指令助记符&gt; {&lt;执行条件&gt;} {是否影响CPSR寄存器的值} &lt;目标寄存器&gt; ,&lt;第一个操作数的寄存器&gt;   {,&lt;第二个操作数&gt;}
@@ -35,8 +64,8 @@ ADD_SUB
 
 <h3 id="常数表达式形式immed_8r">常数表达式形式（#immed_8r）</h3>
 <p><strong>该常数必须对应8位位图，即必须是一个8位的常数通过循环右移偶数位可以得到的数。</strong><br />
-移位前：<code class="language-plaintext highlighter-rouge">00000000 00000000 00000000 xxxxxxxx</code><br />
-将这个32位数（除了最后8位都是0）向右循环移位任意偶数位（但要在1轮以内），即得到一个新的32位数（称为<code class="language-plaintext highlighter-rouge">8位图立即数</code>），<strong>将这个32位二进制数写入汇编代码中</strong>。<br />
+移位前：<code class="language-plaintext highlighter-rouge">00000000 00000000 00000000 xxxxxxxx</code>（除了最后8位都是0）<br />
+将这个32位数向右循环移位任意偶数位（但要在1轮以内），即得到一个新的32位数（称为<code class="language-plaintext highlighter-rouge">8位图立即数</code>），<strong>将这个32位二进制数写入汇编代码中</strong>。<br />
 这样，新的32位数就可以用<code class="language-plaintext highlighter-rouge">8位数值位</code>和<code class="language-plaintext highlighter-rouge">4位移位数</code>组成的12位二进制编码表示。由于用12位二进制编码来表示32位二进制数，因此有些32位二进制数无法被表示。</p>
 
 <p>参考资料：<a href="https://blog.csdn.net/harrymore2011/article/details/6657927">CSDN</a></p>
@@ -97,7 +126,6 @@ SUB	R1,R1,R2,LSR R3	;R1=R1-(R2/2^R3) ;“R2,LSR R3”为一个整体
       <th style="text-align: left">条件助记符</th>
       <th style="text-align: left">标志</th>
       <th style="text-align: left">含义</th>
-      <th> </th>
     </tr>
   </thead>
   <tbody>
@@ -106,112 +134,96 @@ SUB	R1,R1,R2,LSR R3	;R1=R1-(R2/2^R3) ;“R2,LSR R3”为一个整体
       <td style="text-align: left">EQ</td>
       <td style="text-align: left">Z=1</td>
       <td style="text-align: left">相等</td>
-      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">1</td>
       <td style="text-align: left">NE</td>
       <td style="text-align: left">Z=0</td>
       <td style="text-align: left">不相等</td>
-      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">10</td>
       <td style="text-align: left">CS/HS</td>
       <td style="text-align: left">C=1</td>
       <td style="text-align: left">无符号数大于或等于</td>
-      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">11</td>
       <td style="text-align: left">CC/LO</td>
       <td style="text-align: left">C=0</td>
       <td style="text-align: left">无符号数小于</td>
-      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">100</td>
       <td style="text-align: left">MI</td>
       <td style="text-align: left">N=1</td>
       <td style="text-align: left">负数</td>
-      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">101</td>
       <td style="text-align: left">PL</td>
       <td style="text-align: left">N=0</td>
       <td style="text-align: left">正数或零</td>
-      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">110</td>
       <td style="text-align: left">VS</td>
       <td style="text-align: left">V=1</td>
       <td style="text-align: left">溢出</td>
-      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">111</td>
       <td style="text-align: left">VC</td>
       <td style="text-align: left">V=0</td>
       <td style="text-align: left">没有溢出</td>
-      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">1000</td>
       <td style="text-align: left">HI</td>
-      <td style="text-align: left">C=1</td>
-      <td style="text-align: left">Z=0</td>
-      <td>无符号数大于</td>
+      <td style="text-align: left">C=1,Z=0</td>
+      <td style="text-align: left">无符号数大于</td>
     </tr>
     <tr>
       <td style="text-align: left">1001</td>
       <td style="text-align: left">LS</td>
-      <td style="text-align: left">C=0</td>
-      <td style="text-align: left">Z=1</td>
-      <td>无符号数小于或等于</td>
+      <td style="text-align: left">C=0,Z=1</td>
+      <td style="text-align: left">无符号数小于或等于</td>
     </tr>
     <tr>
       <td style="text-align: left">1010</td>
       <td style="text-align: left">GE</td>
       <td style="text-align: left">N=V</td>
       <td style="text-align: left">有符号数大于或等于</td>
-      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">1011</td>
       <td style="text-align: left">LT</td>
       <td style="text-align: left">N!=V</td>
       <td style="text-align: left">有符号数小于</td>
-      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">1100</td>
       <td style="text-align: left">GT</td>
-      <td style="text-align: left">Z=0</td>
-      <td style="text-align: left">N=V</td>
-      <td>有符号数大于</td>
+      <td style="text-align: left">Z=0,N=V</td>
+      <td style="text-align: left">有符号数大于</td>
     </tr>
     <tr>
       <td style="text-align: left">1101</td>
       <td style="text-align: left">LE</td>
-      <td style="text-align: left">Z=1</td>
-      <td style="text-align: left">N!=V</td>
-      <td>有符号数小于或等于</td>
+      <td style="text-align: left">Z=1,N!=V</td>
+      <td style="text-align: left">有符号数小于或等于</td>
     </tr>
     <tr>
       <td style="text-align: left">1110</td>
       <td style="text-align: left">AL</td>
       <td style="text-align: left">任何</td>
       <td style="text-align: left">无条件执行(指令默认条件)</td>
-      <td> </td>
     </tr>
     <tr>
       <td style="text-align: left">1111</td>
       <td style="text-align: left">NV</td>
       <td style="text-align: left">任何</td>
       <td style="text-align: left">从不执行(不要使用)</td>
-      <td> </td>
     </tr>
   </tbody>
 </table>
