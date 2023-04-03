@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hulakk.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hulakk.github.io/blog/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2023-04-03T17:41:43+08:00</updated><id>https://hulakk.github.io/blog/feed.xml</id><title type="html">Hulakk’s Personal Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>hulakk</name></author><entry><title type="html">ARM汇编基础</title><link href="https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html" rel="alternate" type="text/html" title="ARM汇编基础" /><published>2023-04-03T00:00:00+08:00</published><updated>2023-04-03T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html"><![CDATA[<h2 id="整体框架">整体框架</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://hulakk.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hulakk.github.io/blog/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2023-04-03T18:14:13+08:00</updated><id>https://hulakk.github.io/blog/feed.xml</id><title type="html">Hulakk’s Personal Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>hulakk</name></author><entry><title type="html">ARM汇编基础</title><link href="https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html" rel="alternate" type="text/html" title="ARM汇编基础" /><published>2023-04-03T00:00:00+08:00</published><updated>2023-04-03T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%B1%87%E7%BC%96/2023/04/03/ARM%E6%B1%87%E7%BC%96.html"><![CDATA[<h2 id="整体框架">整体框架</h2>
 <pre><code class="language-asm">;文件名：TEST1.S 
 ;功能：实现两个寄存器相加 
 ;说明：使用ARMulate软件仿真调试 
@@ -356,7 +356,198 @@ STM &lt;目标地址&gt;,&lt;源寄存器列表&gt;  ;存储指令(寄存器-&gt
   <li>IB： 每次传送前地址加4</li>
   <li>DA：每次传送后地址减4</li>
   <li>DB：每次传送前地址减4</li>
-</ul>]]></content><author><name>hulakk</name></author><category term="汇编" /><category term="计算机" /><category term="CS" /><category term="汇编" /><category term="嵌入式系统" /><summary type="html"><![CDATA[整体框架 ;文件名：TEST1.S ;功能：实现两个寄存器相加 ;说明：使用ARMulate软件仿真调试 AREA Example1,CODE,READONLY ;声明代码段Example1 ENTRY ;标识程序入口 CODE32 ;声明32位ARM指令 START MOV R0,#0 ;设置参数 MOV R1,#10 LOOP BL ADD_SUB ;调用子程序ADD_SUB B LOOP ;跳转到LOOP ADD_SUB ADDS R0,R0,R1 ;R0 = R0 + R1 MOV PC,LR ;子程序返回 END ;文件结束 说明： 1.注释以“;”开头 2.标号（以上代码中的“START”“LOOP”“ADD_SUB”）定格写 3.以“END”结尾 4.尖括号（“&lt;&gt;”）包含的内容是必须的，花括号（“{}”）包含的内容是可选的]]></summary></entry><entry><title type="html">助词に的用法</title><link href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB.html" rel="alternate" type="text/html" title="助词に的用法" /><published>2023-03-31T00:00:00+08:00</published><updated>2023-03-31T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB.html"><![CDATA[<h2 id="用于存在句的地点前">用于存在句的地点前</h2>
+</ul>
+
+<h3 id="数据处理指令">数据处理指令</h3>
+<h4 id="数据传送指令">数据传送指令</h4>
+<ul>
+  <li>MOV</li>
+  <li>MVN</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">MOV</code>指令将8位图立即数或寄存器传送到目标寄存器（Rd），可用于移位运算等操作。<br />
+同类型的指令还有<code class="language-plaintext highlighter-rouge">MVN</code>，它可以实现数据的非传递，即把操作数取反后送至目标寄存器。</p>
+<pre><code class="language-asm">MOV    目标寄存器，操作数
+; 目标寄存器 &lt;-- 操作数
+</code></pre>
+<h4 id="算术逻辑运算指令">算术逻辑运算指令</h4>
+<p>算术逻辑运算指令包括“加/减”以及“与/或/异或”等指令，它们的格式如下：</p>
+<pre><code class="language-asm">OpCode 结果寄存器，运算寄存器，第二操作数
+</code></pre>
+<p>OpCode种类：</p>
+<ol>
+  <li>算术运算指令
+    <ul>
+      <li>ADD：加法</li>
+      <li>ADC：带进位加法</li>
+      <li>SUB：剑法</li>
+      <li>RSB：逆向减法</li>
+      <li>SBC：带进位减法</li>
+      <li>RSC：带进位逆向减法</li>
+    </ul>
+  </li>
+  <li>逻辑运算指令
+    <ul>
+      <li>AND：逻辑“与”</li>
+      <li>ORR：逻辑“或”</li>
+      <li>EOR：逻辑“异或”</li>
+      <li>BIC：位清除</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="比较指令">比较指令</h4>
+<p>比较指令将两个数值进行的特定运算，根据运算结果影响CPSR的相关标志位，用于后面程序的条件执行，但是运算结果不予保存。</p>
+<pre><code class="language-asm">OpCode 运算寄存器，操作数
+</code></pre>
+<p>OpCode：</p>
+<ul>
+  <li>CMP：数值比较</li>
+  <li>CMN：负数比较</li>
+  <li>TST：位测试</li>
+  <li>TEQ：相等测试</li>
+</ul>
+
+<h3 id="乘法指令">乘法指令</h3>
+<p>ARM7TDMI具有三种乘法指令，分别为：</p>
+<ul>
+  <li>32×32位乘法指令；</li>
+  <li>32× 32位乘加指令；</li>
+  <li>32× 32位结果为64位的乘/乘加指令。
+    <pre><code class="language-asm">MUL 目标寄存器，运算寄存器，第二操作数
+</code></pre>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>助记符</th>
+      <th>说明</th>
+      <th>操作</th>
+      <th>条件码位置</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MUL Rd,Rm,Rs</td>
+      <td>32位乘法指令</td>
+      <td>Rd&lt;-Rm*Rs (Rd≠Rm)</td>
+      <td>MUL{cond}{S}</td>
+    </tr>
+    <tr>
+      <td>MLA Rd,Rm,Rs,Rn</td>
+      <td>32位乘加指令</td>
+      <td>Rd&lt;-Rm*Rs+Rn (Rd≠Rm)</td>
+      <td>MLA{cond}{S}</td>
+    </tr>
+    <tr>
+      <td>UMULL RdLo,RdHi,Rm,Rs</td>
+      <td>64位无符号乘法指令</td>
+      <td>(RdLo,RdHi)&lt;-Rm*Rs</td>
+      <td>UMULL{cond}{S}</td>
+    </tr>
+    <tr>
+      <td>UMLAL RdLo,RdHi,Rm,Rs</td>
+      <td>64位无符号乘加指令</td>
+      <td>(RdLo,RdHi)&lt;-Rm*Rs+(RdLo,RdHi)</td>
+      <td>SMLAL{cond}{S}</td>
+    </tr>
+    <tr>
+      <td>SMULL RdLo,RdHi,Rm,Rs</td>
+      <td>64位有符号乘法指令</td>
+      <td>(RdLo,RdHi)&lt;-Rm*Rs</td>
+      <td>SMULL{cond}{S}</td>
+    </tr>
+    <tr>
+      <td>SMLAL RdLo,RdHi,Rm,Rs</td>
+      <td>64位有符号乘加指令</td>
+      <td>(RdLo,RdHi)&lt;-Rm*Rs+(RdLo,RdHi)</td>
+      <td>SMLAL{cond}{S}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="arm分支指令">ARM分支指令</h3>
+<p>在ARM中有两种方式可以实现程序的跳转：</p>
+<ol>
+  <li>直接向PC寄存器赋值实现跳转；<br />
+  例：<code class="language-plaintext highlighter-rouge">MOV PC,R14</code></li>
+  <li>使用分支指令直接跳转。
+    <pre><code class="language-asm">OpCode 跳转目标
+</code></pre>
+    <p>OpCode:</p>
+    <ul>
+      <li>B:分支指令</li>
+      <li>BL：带链接的分支指令</li>
+      <li>BX：带状态切换的分支指令</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="协处理器指令">协处理器指令</h3>
+<p>ARM内核支持协处理器操作，协处理器的控制要通过协处理器命令实现。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>助记符</th>
+      <th>说明</th>
+      <th>操作</th>
+      <th>条件码位置</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CDP coproc,opcode1,CRd,CRn,CRm{,opcode2}</td>
+      <td>协处理器数据操作指令</td>
+      <td>取决于协处理器</td>
+      <td>CDP{cond}</td>
+    </tr>
+    <tr>
+      <td>LDC{L} coproc, CRd,<地址></地址></td>
+      <td>协处理器数据读取指令</td>
+      <td>取决于协处理器</td>
+      <td>LDC{cond}{L}</td>
+    </tr>
+    <tr>
+      <td>STC{L} coproc, CRd,<地址></地址></td>
+      <td>协处理器数据写入指令</td>
+      <td>取决于协处理器</td>
+      <td>STC{cond}{L}</td>
+    </tr>
+    <tr>
+      <td>MCR coproc,opcode1,Rd,CRn,CRm{,opcode2}</td>
+      <td>ARM寄存器到协处理器寄存器的数据传送指令</td>
+      <td>取决于协处理器</td>
+      <td>MCR{cond}</td>
+    </tr>
+    <tr>
+      <td>MRC coproc,opcode1,Rd,CRn,CRm{,opcode2}</td>
+      <td>协处理器寄存器到ARM寄存器到的数据传送指令</td>
+      <td>取决于协处理器</td>
+      <td>MCR{cond}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="杂项指令">杂项指令</h3>
+<p>在ARM指令集中杂项指令共有3条，它们非常重要，特别是与操作系统的使用息息相关：</p>
+<ol>
+  <li>软件中断产生指令：SWI</li>
+  <li>程序状态寄存器读指令：MRS</li>
+  <li>程序状态寄存器写指令：MSR</li>
+</ol>
+
+<h3 id="伪指令">伪指令</h3>
+<p>ARM伪指令不属于ARM指令集中的指令，是为了编程方便而定义的。伪指令可以像其它ARM指令一样使用，但在编译时这些指令将被等效的ARM指令代替。<br />
+ARM伪指令有四条：</p>
+<ol>
+  <li>小范围地址读取指令：ADR</li>
+  <li>中等范围地址读取指令：ADRL</li>
+  <li>大等范围地址读取指令：LDR</li>
+  <li>空操作指令：NOP</li>
+</ol>]]></content><author><name>hulakk</name></author><category term="汇编" /><category term="计算机" /><category term="CS" /><category term="汇编" /><category term="嵌入式系统" /><summary type="html"><![CDATA[整体框架 ;文件名：TEST1.S ;功能：实现两个寄存器相加 ;说明：使用ARMulate软件仿真调试 AREA Example1,CODE,READONLY ;声明代码段Example1 ENTRY ;标识程序入口 CODE32 ;声明32位ARM指令 START MOV R0,#0 ;设置参数 MOV R1,#10 LOOP BL ADD_SUB ;调用子程序ADD_SUB B LOOP ;跳转到LOOP ADD_SUB ADDS R0,R0,R1 ;R0 = R0 + R1 MOV PC,LR ;子程序返回 END ;文件结束 说明： 1.注释以“;”开头 2.标号（以上代码中的“START”“LOOP”“ADD_SUB”）定格写 3.以“END”结尾 4.尖括号（“&lt;&gt;”）包含的内容是必须的，花括号（“{}”）包含的内容是可选的]]></summary></entry><entry><title type="html">助词に的用法</title><link href="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB.html" rel="alternate" type="text/html" title="助词に的用法" /><published>2023-03-31T00:00:00+08:00</published><updated>2023-03-31T00:00:00+08:00</updated><id>https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB</id><content type="html" xml:base="https://hulakk.github.io/blog/%E6%97%A5%E6%9C%AC%E8%AA%9E/2023/03/31/%E5%8A%A9%E8%AF%8D%E3%81%AB.html"><![CDATA[<h2 id="用于存在句的地点前">用于存在句的地点前</h2>
 <h2 id="表示时间点">表示时间点</h2>
 <h2 id="表示动作归着点">表示动作归着点</h2>
 <h2 id="表示动作的对方">表示动作的对方</h2>
